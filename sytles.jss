@@ -258,46 +258,32 @@ footer {
 }
 
 .social-icons {
+    text-align: center;
     margin-top: 10px;
 }
 
+.social-icons p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .social-icons a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
+    font-size: 30px; /* Increase the size of icons */
     margin: 0 10px;
+    color: #0073e6; /* Adjust color as needed */
     transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-    color: #007BFF; /* Changes color on hover */
-}
-
-
-
-
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-    color: #007BFF; /* Changes color on hover */
+    color: #ff6600; /* Change color on hover */
 }
 
 
 
 /* Apply Background Image to the Entire Page */
 body {
-    background: url('images/rs.jpg') no-repeat center center fixed;
+    background: url('rs.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -313,4 +299,26 @@ section {
     width: 80%;
     margin: 20px auto;
     text-align: center;
+}
+
+
+
+
+.video-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.video-container video {
+    width: 300px; /* Adjusted video size */
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 300%; /* Ensures responsiveness */
+    max-width: 600px; /* Keep images smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid white;
 }
